@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <padding android:top="1dp"/>
+            <solid android:color="#2680EB" />
+            <corners android:topLeftRadius="18dp"
+                android:topRightRadius="18dp"/>
+        </shape>
+    </item>
+
+
+    <item>
+
+        <shape android:shape="rectangle">
+            <solid android:color="@color/filter_card_color"/>
+            <corners android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
+        </shape>
+    </item>
+
+
+
+</layer-list>

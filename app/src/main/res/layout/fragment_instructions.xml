@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.fragments.Details.InstructionsFragment">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/instructions_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingBottom="30dp"
+            tools:text="Layer the Kahlua, Sambucca and Grand Marnier into a shot glas in that order. Better than B-52" />
+    </ScrollView>
+
+</FrameLayout>

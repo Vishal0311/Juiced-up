@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ui.fragments.Filter.BottomSheetFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="100dp"
+        android:paddingBottom="30dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:text="@string/filters"
+                android:textAllCaps="true"
+                android:textColor="@color/filter_text_color"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/filter"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/filter_text_color" />
+
+            <RelativeLayout
+                android:id="@+id/alcohol_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alcoholic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alcoholic"
+                    android:textAllCaps="false"
+                    android:textColor="@color/filter_text_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alcoholic_filter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/alcoholic"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="-25dp"
+                    android:background="@drawable/circle_for_filter"
+                    android:gravity="center"
+                    android:maxHeight="18dp"
+                    android:minWidth="18dp"
+                    android:minHeight="18dp"
+                    android:visibility="gone"
+                    android:shadowColor="@android:color/white"
+                    android:shadowRadius="10.0"
+                    android:textColor="@color/black"
+                    tools:text="3" />
+
+
+            </RelativeLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_alcohol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alcohol_ll"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="16dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/chip_group_alcohol"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="21dp"
+                android:background="@color/filter_text_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/glass_filter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/glass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Glasses"
+                    android:textAllCaps="false"
+                    android:textColor="@color/filter_text_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/glass_filter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/glass"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="-25dp"
+                    android:background="@drawable/circle_for_filter"
+                    android:gravity="center"
+                    android:maxHeight="18dp"
+                    android:minWidth="18dp"
+                    android:minHeight="18dp"
+                    android:visibility="gone"
+                    android:shadowColor="@android:color/white"
+                    android:shadowRadius="10.0"
+                    android:textColor="@color/black"
+                    tools:text="3" />
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_glass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/glass_filter_ll"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="16dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/chip_group_glass"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="21dp"
+                android:background="@color/filter_text_color" />
+
+            <RelativeLayout
+                android:id="@+id/ingredient_filter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ingredient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:textAllCaps="false"
+                    android:textColor="@color/filter_text_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ingredient_filter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/ingredient"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="-25dp"
+                    android:background="@drawable/circle_for_filter"
+                    android:gravity="center"
+                    android:maxHeight="18dp"
+                    android:minWidth="18dp"
+                    android:minHeight="18dp"
+                    android:visibility="gone"
+                    android:shadowColor="@android:color/white"
+                    android:shadowRadius="10.0"
+                    android:textColor="@color/black"
+                    tools:text="3" />
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient_filter_ll"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="30dp">
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

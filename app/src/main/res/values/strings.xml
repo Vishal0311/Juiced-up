@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Juiced-up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_may_like">You may like</string>
+    <string name="category">Category</string>
+    <string name="filters">Filters</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="non_alcohol">Non-Alcohol</string>
+    <string name="searched_text">Searched Results</string>
+    <string name="filtered_text">Filter Results</string>
+</resources>

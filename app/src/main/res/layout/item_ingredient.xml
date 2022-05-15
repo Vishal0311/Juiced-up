@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/ingredient_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Banana Liquer"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/font_regular"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
